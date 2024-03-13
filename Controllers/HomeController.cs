@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using SwapiMVC.Models;
@@ -15,6 +16,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        string[] names = new[] { "Autumn", "Alecx", "Tom", "Kenn", "Paul" };
         return View();
     }
 

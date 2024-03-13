@@ -1,0 +1,33 @@
+@model PeopleViewModel;
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="d-flex flex-row justify-content-between align-items-end">
+    <h1 class="m-0">@Model.Name</h1>
+    <a asp-action="Index">Back to Index</a>
+</div>
+<hr>
+
+<section class="item p-4 text-center">
+    <h2>Person Details</h2>
+    <hr>
+    <div class="row m-0 pt-3 justify-content-between">
+        <div class="col-6 col-md-3">
+            <h3>Name</h3>
+            <p>@Model.Name</p>
+        </div>
+        <div class="col-6 col-md-3">
+            <h3>Height</h3>
+            <p>@Model.Height</p>
+        </div>
+        <div class="col-6 col-md-3">
+            <h3>Mass</h3>
+            <p>@Model.Mass</p>
+        </div>
+        <div class="col-6 col-md-3">
+            <h3>Birth Year</h3>
+            <p>@Model.BirthYear</p>
+        </div>
+    </div>
+</section>
